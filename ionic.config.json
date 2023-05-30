@@ -1,0 +1,7 @@
+{
+  "name": "SIYESHEE",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

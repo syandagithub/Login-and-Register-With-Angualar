@@ -1,0 +1,70 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title><em>SIYESHE<ion-icon name="construct-outline"></ion-icon> <br>HOLDINGS<ion-icon name="hammer-outline"></ion-icon></em></ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content >
+  <hr>
+  <hr>
+  <hr>
+  <hr>
+  <hr>
+  <hr>
+<div class="re">
+
+
+  <ion-card>
+
+    <ion-item>
+      <ion-label position="stacked"><ion-icon name="person-circle-outline"></ion-icon>  NAME</ion-label>
+      <ion-input id="name" #name="ngModel" [(ngModel)]="user.name"></ion-input>
+    </ion-item>
+    </ion-card>
+
+   <ion-card>
+     <ion-item>
+      <ion-label position="stacked"><ion-icon name="person-circle-outline"></ion-icon>  SURNAME</ion-label>
+      <ion-input id="surname" #surname="ngModel" [(ngModel)]="user.surname"></ion-input>
+    </ion-item>
+    </ion-card>
+
+    <ion-card>
+      <ion-item>
+      <ion-label position="stacked"><ion-icon name="barcode-outline"></ion-icon>  USERNAME</ion-label>
+      <ion-input id="username" #username="ngModel" [(ngModel)]="user.username"></ion-input>
+      </ion-item>
+      </ion-card>
+
+    <ion-card>
+      <ion-item>
+      <ion-label position="stacked"><ion-icon name="mail-unread-outline"></ion-icon>  EMAIL</ion-label>
+      <ion-input id="email" placeholder="email" type="email" #email="ngModel" [(ngModel)]="user.email"></ion-input>
+      </ion-item>
+      </ion-card>
+
+      <ion-card>
+        <ion-item>
+        <ion-label position="stacked"><ion-icon name="key-outline"></ion-icon>  PASSWORD</ion-label>
+        <ion-input id="password" placeholder="password" #password="ngModel" [(ngModel)]="user.password"></ion-input>
+        </ion-item>
+        </ion-card>
+
+        <ion-card>
+          <ion-item>
+          <ion-label position="stacked"><ion-icon name="call-outline"></ion-icon>  CONTACT</ion-label>
+          <ion-input id="contact" #contact="ngModel" [(ngModel)]="user.contact"></ion-input>
+          </ion-item>
+       </ion-card>
+      
+
+   
+  
+</div>
+
+<div class="but">
+  <ion-button style="--background:black" shape="round" (click)="reg()"> <ion-icon name="person-add-outline"></ion-icon>REGISTER</ion-button>
+  <ion-button style="--background:black" shape="round" [routerLink]="['/login']">LOGIN</ion-button>
+</div>
+
+</ion-content>

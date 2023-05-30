@@ -1,0 +1,50 @@
+<ion-header>
+  <ion-toolbar style="--background:navy">
+    <ion-title style="color:cornsilk;"><b>LOGIN</b></ion-title>
+   
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content style="--background:maroon">
+  <div class="cs">
+    <ion-button style="--background:maroon" routerLink="/register" ><ion-icon style="color: black;" name="arrow-back-circle-outline"></ion-icon></ion-button>
+  </div>
+  
+  
+    
+  <hr>
+  <div class="image">
+    <ion-button style="--background:white" ><ion-icon style="color: black;" name="lock-closed-outline"></ion-icon></ion-button>
+  </div>
+
+  <hr>
+  <hr>
+  <hr>
+  <hr>
+  <ion-card style="background: antiquewhite;">
+    <ion-item>
+      <ion-label position="stacked"><b>EMAIL</b></ion-label>
+      <ion-input id="email" [(ngModel)]="user.email" ><ion-icon name="mail-outline"></ion-icon></ion-input>
+      
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked"><b>PASSWORD</b></ion-label>
+      <hr>
+      <ion-input id="password" type="password" [(ngModel)] = "user.password"><ion-icon name="key-outline"></ion-icon></ion-input>
+      
+    </ion-item>
+
+  </ion-card>
+<div class="lo">
+  <ion-button style="--background:green ;" (click)="log()" >LOGIN&nbsp;<ion-icon name="arrow-forward-circle-outline"></ion-icon></ion-button><br>
+  <ion-icon name="help-circle-outline" (click)="lost()"></ion-icon>
+</div>  
+
+<!-- <hr> -->
+<!--<hr>-->
+   
+   
+  
+</ion-content>

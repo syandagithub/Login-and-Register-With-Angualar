@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>RESET<ion-icon name="key-outline"></ion-icon> </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content style="--background:maroon">
+
+  <ion-card>
+    <ion-item>
+      <ion-label position="stacked">EMAIL</ion-label>
+      <ion-input id="em" ></ion-input>
+    </ion-item>
+  </ion-card>
+<div class="res">
+  <ion-button style="--background:red" (click)="sent()">RESET</ion-button><br>
+  <ion-icon name="arrow-back-circle-outline" (click)="back()"></ion-icon>
+</div>
+ 
+</ion-content>
